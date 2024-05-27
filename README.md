@@ -11,7 +11,7 @@ After installation, you can run that in any directory:
     pisilinux-welcome
 
 ## Versioning
-2.0 is final version currently.
+2.X is final version currently.
 
 ## Artwork
 Fatih Kaya (trlinux41 at gmail dot com)
@@ -27,4 +27,4 @@ Slack icon designed by creatiVe5 (http://creative5.deviantart.com/). (**License:
 Wikipedia icon designed by SimpleIcon (http://simpleicon.com/) from Flaticon. (**License:** [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/))
 
 ## To Do
-See open issues (https://github.com/PisiLinuxNew/pisilinux-welcome/issues).
+See open issues (https://github.com/PisiLinuxNew/pisilinux-welcome-qt6/issues).
