@@ -25,7 +25,7 @@ langs = []
 for f in os.listdir("languages"):
     if f.endswith(".ts"):
         lang_file = "languages/{}".format(f)
-        subprocess.run(["lrelease", lang_file])
+        subprocess.run(["lrelease-qt6", lang_file])
         langs.append(("languages/{}".format(f)).replace(".ts", ".qm"))
 
 release_notes = []
@@ -45,7 +45,7 @@ print(langs)
 
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
-         ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
+        #  ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/pisilinux-welcome/data/release-notes', release_notes),
          ('/usr/share/pisilinux-welcome/languages', langs),
          ("/usr/share/pisilinux-welcome/images", images)]
