@@ -46,12 +46,9 @@ print(langs)
 datas = [('/usr/share/applications', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/icons/hicolor/scalable/apps', ['images/pisilinux-welcome.svg']),
         #  ('/etc/skel/.config/autostart', ['data/pisilinux-welcome.desktop']),
-         (os.environ["HOME"]+'/.config/autostart', ['data/pisilinux-welcome.desktop']),
          ('/usr/share/pisilinux-welcome/data/release-notes', release_notes),
          ('/usr/share/pisilinux-welcome/languages', langs),
          ("/usr/share/pisilinux-welcome/images", images)]
-
-
 
 setup(
     name="pisilinux-welcome",

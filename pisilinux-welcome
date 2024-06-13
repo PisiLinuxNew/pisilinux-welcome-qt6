@@ -43,6 +43,11 @@ def main():
         window.setSystem("live")
     else:
         window.setSystem("installed")
+    
+    # welcome başlangıçta açılabilmesi için HOME/.config/autostart dizininin kontrolü
+    autostart_path = os.path.join(os.environ["HOME"], ".config", "autostart")
+    if not os.path.exists(autostart_path):
+        os.makedirs(autostart_path)
 
     app.exec()
 
